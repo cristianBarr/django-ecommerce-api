@@ -1,0 +1,15 @@
+# Django
+*.sqlite3
+__pycache__/
+*.pyc
+
+# Entorno virtual
+venv/
+
+# IDE/Editor
+.vscode/
+.idea/
+
+# Archivos de entorno
+.env
+*.env
