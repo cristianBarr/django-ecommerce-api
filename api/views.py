@@ -1,5 +1,7 @@
 from rest_framework import generics
-from .models import Product, Order
+#from .models import Product, Order
+from products.models import Product
+from orders.models import Order
 from .serializers import ProductSerializer, OrderSerializer
 from rest_framework.permissions import IsAuthenticated
 
