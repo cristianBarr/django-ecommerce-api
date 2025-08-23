@@ -8,6 +8,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/products/', ProductListCreateView.as_view()),
     path('api/orders/', OrderListCreateView.as_view()),
+    path('api/products/', ProductListCreateView.as_view(), name='product-list'),
+    path('api/orders/', OrderListCreateView.as_view(), name='order-list'),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
