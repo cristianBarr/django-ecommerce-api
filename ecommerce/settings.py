@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # Third party
     'rest_framework',
     'rest_framework_simplejwt',
+    'django_filters',  # Para los filtros avanzados que agregué
     
     # Local apps (Nueva Estructura)
     'products',
@@ -136,4 +137,9 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
+    # Configuracion para filtros y busqueda
+    'DEFAULT_FILTER_BACKENDS': [
+        'django_filters.rest_framework.DjangoFilterBackend',  # Filtros por campo
+        'rest_framework.filters.SearchFilter',  # Busqueda por texto
+    ],
 }
