@@ -49,11 +49,14 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'django_filters',  # Para los filtros avanzados que agregué
     
-    # Local apps (Nueva Estructura)
+    # Local apps 
     'products',
     'orders', 
     'users',
     'core',
+
+    # Carrito
+    'cart',
 ]
 
 MIDDLEWARE = [
